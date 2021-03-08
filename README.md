@@ -14,9 +14,15 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 ## What's missing
 
 -   No bundler
--   No SASS
+-   No SASS compilation
+-   No CSS framework
+-   No JavaScript framework
 -   No test framework
 -   No image transformations
+-   No shortcodes
+-   No environment variables
+-   No template language assumptions
+-   No built-in deployment targets
 
 ## Getting started
 
