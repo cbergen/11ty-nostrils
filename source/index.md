@@ -4,7 +4,7 @@ title: 11ty Nostrils
 description: A starter config for Eleventy with pipelines for Typescript and PostCSS.
 ---
 
-<img src="/images/nostrils.png" alt="Nostrils" width="300">
+{% img "./source/images/nostrils.png" "png" "300" "" "" "Nostrils" %}
 
 # 11ty Nostrils
 
@@ -18,6 +18,7 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 -   Minifying CSS via cssnano
 -   Minifying HTML via html-minifier
 -   Minifying JS via terser
+-   Shortcode for generating IMG and PICTURE elements via <a href="https://github.com/11ty/eleventy-img">eleventy-img</a> plugin
 
 ## What's missing
 
@@ -26,8 +27,6 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 -   No CSS framework
 -   No JavaScript framework
 -   No test framework
--   No image transformations
--   No shortcodes
 -   No environment variables
 -   No template language assumptions
 -   No built-in deployment targets
@@ -54,11 +53,15 @@ npm install
 
 ### 4. Start a dev server
 
+Changes to Eleventy content, Typescript/JavaScript, and CSS all trigger automatic updates in the browser.
+
 ```
 npm run dev
 ```
 
 ### 5. Build for production
+
+The final build is output to the "build" directory.
 
 ```
 npm run build
