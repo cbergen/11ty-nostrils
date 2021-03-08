@@ -18,35 +18,47 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 -   Minifying CSS via cssnano
 -   Minifying HTML via html-minifier
 -   Minifying JS via terser
--   Fast hot module replacement for Eleventy content, Javascript, and CSS
+
+## What's missing
+
+-   No bundler
+-   No SASS compilation
+-   No CSS framework
+-   No JavaScript framework
+-   No test framework
+-   No image transformations
+-   No shortcodes
+-   No environment variables
+-   No template language assumptions
+-   No built-in deployment targets
 
 ## Getting started
 
-### Clone this repo
+### 1. Clone this repo
 
 ```
-git clone
+git clone https://github.com/cbergen/11ty-nostrils.git my-project
 ```
 
-### Navigate to directory
+### 2. Navigate to directory
 
 ```
 cd my-project
 ```
 
-### Install node dependencies
+### 3. Install node dependencies
 
 ```
 npm install
 ```
 
-### Start a dev server
+### 4. Start a dev server
 
 ```
 npm run dev
 ```
 
-### Build for production
+### 5. Build for production
 
 ```
 npm run build
