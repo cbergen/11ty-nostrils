@@ -1,0 +1,14 @@
+html {
+    padding: 2%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: system-ui;
+    line-height: 1.5;
+}
