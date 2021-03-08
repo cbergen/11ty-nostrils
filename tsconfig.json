@@ -1,8 +1,8 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "outDir": "static/js"
-    },
-    "include": ["static/ts/*.ts"],
-    "exclude": []
+	"compilerOptions": {
+		"target": "es5",
+		"outDir": "_static/js"
+	},
+	"include": ["source/js/*.ts"],
+	"exclude": []
 }
