@@ -11,6 +11,13 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 -   Minifying HTML via html-minifier
 -   Minifying JS via terser
 
+## What's missing
+
+-   No bundler
+-   No SASS
+-   No test framework
+-   No image transformations
+
 ## Getting started
 
 ### 1. Clone this repo
