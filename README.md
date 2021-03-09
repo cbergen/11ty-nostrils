@@ -4,17 +4,15 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 
 ## Features
 
--   Typescript compilation
+-   Typescript bundling via <a href="https://swc.rs/">swc</a>
 -   Transforming CSS imports to a single file
 -   Autoprefixing via postcss-preset-env
 -   Minifying CSS via cssnano
 -   Minifying HTML via html-minifier
--   Minifying JS via terser
 -   Shortcode for generating IMG and PICTURE elements via <a href="https://github.com/11ty/eleventy-img">eleventy-img</a> plugin
 
 ## What's missing
 
--   No bundler
 -   No SASS compilation
 -   No CSS framework
 -   No JavaScript framework

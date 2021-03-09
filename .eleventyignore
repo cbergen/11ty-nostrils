@@ -1,0 +1,4 @@
+_static
+node_modules
+source/images
+source/js/*.ts
