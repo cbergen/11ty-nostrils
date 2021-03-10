@@ -19,5 +19,9 @@ module.exports = config({
 				syntax: "typescript",
 			},
 		},
+		env: {
+			// path to package.json which includes browserslist field
+			path: ".",
+		},
 	},
 });
