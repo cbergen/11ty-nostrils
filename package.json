@@ -4,7 +4,7 @@
 	"description": "A starter config for Eleventy with pipelines for Typescript and PostCSS",
 	"scripts": {
 		"dev": "NODE_ENV=dev npm-run-all -p watch:*",
-		"build": "npm-run-all clean-build build:ts build:11ty -p minify:html build:css",
+		"build": "npm-run-all clean-build build:ts build:11ty -p minify:* build:css",
 		"watch:ts": "spack && chokidar source/js/*.ts -c spack",
 		"watch:11ty": "eleventy --serve",
 		"clean-build": "rimraf build",
@@ -12,6 +12,7 @@
 		"build:11ty": "eleventy --output=build",
 		"build:css": "postcss source/css/styles.css --no-map --dir build/css",
 		"minify:html": "html-minifier --input-dir build --output-dir build --file-ext html --remove-comments --collapse-whitespace",
+		"minify:js": "terser build/js/main.js -m --toplevel -o build/js/main.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Cornelius Bergen, Matchbox Creative",
@@ -34,7 +35,8 @@
 		"postcss-cli": "^8.3.1",
 		"postcss-import": "^14.0.0",
 		"postcss-preset-env": "^6.7.0",
-		"rimraf": "^3.0.2"
+		"rimraf": "^3.0.2",
+		"terser": "^5.6.0"
 	},
 	"browserslist": [
 		"defaults"

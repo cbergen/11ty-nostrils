@@ -12,7 +12,6 @@ module.exports = config({
 	},
 
 	options: {
-		minify: process.env.NODE_ENV !== "dev",
 		jsc: {
 			target: "es5",
 			parser: {
