@@ -22,6 +22,7 @@ A starter config for <a href="https://github.com/11ty/eleventy">Eleventy</a> wit
 ## What's missing
 
 -   No SASS compilation
+-   No linting or typechecking
 -   No CSS framework
 -   No JavaScript framework
 -   No test framework
