@@ -16,7 +16,7 @@ module.exports = async function (url, formats, widths, sizes = "", cls = "", alt
         widths,
         formats,
         urlPath: "/images/",
-        outputDir: "./_static/images/",
+        outputDir: "./build/images/",
         useCache: false,
         sharpJpegOptions: {
             quality: 85,
