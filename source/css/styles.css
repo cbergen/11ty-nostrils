@@ -1,1 +1,6 @@
 @import "./base.css";
+
+img {
+    width: 300px;
+    height: auto;
+}

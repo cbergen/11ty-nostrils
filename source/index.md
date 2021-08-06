@@ -4,7 +4,7 @@ title: 11ty Nostrils
 description: A starter config for Eleventy with pipelines for Typescript and PostCSS.
 ---
 
-{% img "./source/images/nostrils.png" "png" "300" "" "" "Nostrils" %}
+{% img "./source/images/nostrils.png" "png" "600" "" "" "Nostrils" %}
 
 # 11ty Nostrils
 
