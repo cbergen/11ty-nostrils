@@ -1,44 +1,44 @@
 {
-	"name": "11ty-nostrils",
-	"version": "1.0.0",
-	"description": "A starter config for Eleventy with pipelines for Typescript and PostCSS",
-	"scripts": {
-		"dev": "NODE_ENV=dev npm-run-all -p watch:*",
-		"build": "npm-run-all clean-build build:ts build:11ty -p minify:* build:css",
-		"watch:ts": "spack && chokidar source/js/*.ts -c spack",
-		"watch:11ty": "eleventy --serve",
-		"clean-build": "rimraf build",
-		"build:ts": "spack",
-		"build:11ty": "eleventy --output=build",
-		"build:css": "postcss source/css/styles.css --no-map --dir build/css",
-		"minify:html": "html-minifier --input-dir build --output-dir build --file-ext html --remove-comments --collapse-whitespace",
-		"minify:js": "terser build/js/main.js -m --toplevel -o build/js/main.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Cornelius Bergen, Matchbox Creative",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/cbergen/11ty-nostrils"
-	},
-	"devDependencies": {
-		"@11ty/eleventy": "^0.11.1",
-		"@11ty/eleventy-img": "^0.8.0",
-		"@swc/cli": "^0.1.35",
-		"@swc/core": "^1.2.50",
-		"browserslist": "^4.16.3",
-		"chokidar-cli": "^2.1.0",
-		"cssnano": "^4.1.10",
-		"html-minifier": "^4.0.0",
-		"npm-run-all": "^4.1.5",
-		"postcss": "^8.2.7",
-		"postcss-cli": "^8.3.1",
-		"postcss-import": "^14.0.0",
-		"postcss-preset-env": "^6.7.0",
-		"rimraf": "^3.0.2",
-		"terser": "^5.6.0"
-	},
-	"browserslist": [
-		"defaults"
-	]
+    "name": "11ty-nostrils",
+    "version": "1.0.0",
+    "description": "A starter config for Eleventy with pipelines for Typescript and PostCSS",
+    "scripts": {
+        "dev": "NODE_ENV=dev npm-run-all -p watch:*",
+        "build": "npm-run-all clean-build build:ts build:11ty -p minify:* build:css",
+        "watch:ts": "spack && chokidar source/js/*.ts -c spack",
+        "watch:11ty": "eleventy --serve",
+        "clean-build": "rimraf build",
+        "build:ts": "spack",
+        "build:11ty": "eleventy --output=build",
+        "build:css": "postcss source/css/styles.css --no-map --dir build/css",
+        "minify:html": "html-minifier --input-dir build --output-dir build --file-ext html --remove-comments --collapse-whitespace",
+        "minify:js": "terser build/js/main.js -m --toplevel -o build/js/main.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Cornelius Bergen, Matchbox Creative",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cbergen/11ty-nostrils"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^0.12",
+        "@11ty/eleventy-img": "^0.9.0",
+        "@swc/cli": "^0.1.35",
+        "@swc/core": "^1.2.50",
+        "browserslist": "^4.16.3",
+        "chokidar-cli": "^3.0.0",
+        "cssnano": "^5",
+        "html-minifier": "^4.0.0",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.2.7",
+        "postcss-cli": "^8.3.1",
+        "postcss-import": "^14.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "rimraf": "^3.0.2",
+        "terser": "^5.6.0"
+    },
+    "browserslist": [
+        "defaults"
+    ]
 }
