@@ -1,9 +1,9 @@
 const img = require("./shortcodes/img.js");
 
 module.exports = function (config) {
-	config.addShortcode("img", img);
+    config.addShortcode("img", img);
 
-	config.setUseGitIgnore(false);
+    config.setUseGitIgnore(false);
 
     // config.addPassthroughCopy({ "source/images/*": "/images" });
 
@@ -14,10 +14,10 @@ module.exports = function (config) {
         // Compiled CSS is output directly to the build directory with PostCSS
     }
 
-	return {
-		templateFormats: ["md", "html", "js"],
-		dir: {
-			input: "source",
-		},
-	};
+    return {
+        templateFormats: ["md", "html", "js"],
+        dir: {
+            input: "source",
+        },
+    };
 };
