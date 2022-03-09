@@ -4,3 +4,5 @@ _site
 _static
 source/js/*.js
 build
+/package-lock.json
+**.js.map
